@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.window{
+    height:200px;
+    width: 300px;
+    border: 10px solid red;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.image{
+    position: relative;
+}
+.image >img{
+    position: absolute;
+    width: 100%;
+    transition: all 0.3s;
+    top: 0;
+}
+
+.image >img.current{
+    left: 0;
+    transform: translateX(0);
+    z-index: 1;
+}
+.image >img.leave{
+    transform: translateX(-100%);
+    }
+.image >img.enter{
+    transform:none;
+    left: 100%;
+
+}
+.image >img.stady{
+
+}
